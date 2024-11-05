@@ -1,0 +1,2 @@
+ratio same width height
+chuyển từ px -> rem em 

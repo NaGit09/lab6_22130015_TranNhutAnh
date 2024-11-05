@@ -1,0 +1,48 @@
+body {
+    background-color: #E5E7E8;
+}
+.first-card{
+    position: relative;
+    padding-left: 20px; /* Khoảng cách cho thanh dọc */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.first-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;      /* Độ rộng của thanh dọc */
+    height: calc(100%); /* Chiều cao thanh dọc, trừ khoảng trống phía trên và dưới */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+    background-color: #3E04BA; /* Màu của thanh dọc */
+}
+.plan-highlight {
+    background-color: #F7F9FA;
+    color: #3E04BA;
+    border: 1px solid #3E04BA;
+    border-radius: 10px;
+    font-size: 10px;
+}
+.highlight {
+    color: #3E04BA;
+    font-weight: bold;
+    padding: 10px;
+}
+.card {
+    max-width: 40rem;
+    height: 8rem;
+}
+.img-fluid  {
+    width: 90px;
+    height: 90px;
+}
+.right-img {
+    width: 500px;
+    height: 100%;
+    border-radius: 20px;
+    margin-right: 20px;
+}

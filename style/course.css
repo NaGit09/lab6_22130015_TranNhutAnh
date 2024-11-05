@@ -1,0 +1,153 @@
+.wrap {
+    width: 100%;
+    height: 600px;
+    background-color: #F7F9FA;
+}
+.item-list {
+    margin: 10px 10px;
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+}
+.item {
+    flex: 0 0 25%; /* Mỗi item chiếm 25% để hiển thị 4 item */
+    text-align: center;
+    background-color: #E5E8EB;
+    border: none;
+    border-radius: 45px / 45px;
+    margin: 0 10px;
+    max-width: fit-content;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px   ;
+}
+.item:hover {
+    background-color: #2D2F31;
+    color: white;
+}
+.container {
+    position: relative;
+    max-width: 100%;
+}
+#nextButton , #PrevButton {
+    position: absolute;
+    height: 45px;
+    border-radius: 50%;
+    width: 45PX;
+    border: 2px solid gray;
+    background-color: white     ;
+}
+
+.bi-chevron-right ,.bi-chevron-left { 
+    font-weight: bold;
+    font-size: 20px;
+}
+#nextButton {
+    right:  0;
+    top: 35%;
+}
+#PrevButton {
+left: 0;
+top: 35%;
+display: none;
+}
+
+.title {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 100;
+}
+.card-hover {
+    display: none;
+     position: absolute;
+     top: 0;
+     z-index: 100;
+     right: -20rem;
+}
+.card-display {
+    position: relative;
+}
+.author {
+    color: #606469;
+}
+.card-hover::before {
+    content: ""; /* Bắt buộc để hiển thị ::before */
+    position: absolute;
+    left: -10px; /* Đặt tam giác ở bên trái của card */
+    bottom: 50%; /* Điều chỉnh vị trí từ phía trên của card */
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #fff; /* Màu của tam giác trùng với màu nền của card */
+}
+.bi-star-fill  , .bi-star-half{
+    color: goldenrod;
+}
+.col , .row {
+    position: relative;
+}
+.btn-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 40%;
+    right: 0;
+    color: white;
+    font-weight: bold;
+    background-color: #2D2F31;
+    font-size: 20px;
+
+}
+.btn-show {
+    border: solid 2px #2D2F31;
+    color: #2D2F31;
+    padding: 10px 5px;
+    max-width: 20%;
+    margin: 40px     10px;
+    background-color: transparent;
+}
+.card-body {
+    font-size: 15px;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 100%;
+}
+.card-text {
+    margin: 10px;
+}
+small {
+    font-size: 10px;
+}
+ul {
+list-style: none;
+}
+ul li::before {
+    content: '✓ '; /* Thêm dấu check trước mỗi item */
+    margin-right: 5px;
+}
+.list-item{
+    padding:  10px;
+}
+.btn-hover {
+    background-color: #7C1ED0;
+    width: 100%;
+    border-radius: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.underline {
+    text-decoration: underline;
+}
+.Bestseller {
+    background-color: #ECEBA2;
+width: 100px;
+text-align: center;
+font-size: 15px;
+font-weight: bold;
+padding: 10px;
+}
